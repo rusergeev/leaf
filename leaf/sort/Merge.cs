@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace leaf
@@ -25,6 +26,15 @@ namespace leaf
             Parallel.Invoke(() => sort(a, aux, lo, mid), () => sort(a, aux, mid + 1, hi));
             if (a[mid + 1] >= a[mid]) return;
             merge(a, aux, lo, mid, hi);
+        }
+
+        public static void sortbottomup(int[] a)
+        {
+            int N = a.Length;
+            int[] aux = new int[N];
+            for (int sz = 1; sz < N; sz = sz + sz)
+                for (int lo = 0; lo < N - sz; lo += sz + sz)
+                    merge(a, aux, lo, lo + sz - 1, Math.Min(lo + sz + sz - 1, N - 1));
         }
 
         private static void merge(IList<int> a, IList<int> aux, int lo, int mid, int hi)
