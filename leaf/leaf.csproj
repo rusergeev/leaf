@@ -41,11 +41,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queue\IQueue.cs" />
+    <Compile Include="queue\LinkedQueue.cs" />
     <Compile Include="sort\Insertion.cs" />
     <Compile Include="sort\Just.cs" />
     <Compile Include="sort\Merge.cs" />
+    <Compile Include="sort\NumSort.cs" />
     <Compile Include="sort\Quick.cs" />
     <Compile Include="sort\Selection.cs" />
+    <Compile Include="stack\FixedCapacityStack.cs" />
+    <Compile Include="stack\IStack.cs" />
+    <Compile Include="stack\LinkedStack.cs" />
+    <Compile Include="stack\ResizingArrayStack.cs" />
+    <Compile Include="union\Find.cs" />
+    <Compile Include="union\IUnionFind.cs" />
+    <Compile Include="union\QuickFindUF.cs" />
+    <Compile Include="union\QuickUnionUF.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
