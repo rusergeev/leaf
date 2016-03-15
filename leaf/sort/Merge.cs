@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace leaf
+namespace SegmentIntersections
 {
     public static class Merge
     {

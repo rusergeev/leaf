@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace leaf.stack
+namespace SegmentIntersections.stack
 {
     public class FixedCapacityStack<T> : IStack<T>
     {

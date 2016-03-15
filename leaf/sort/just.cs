@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace leaf
+namespace SegmentIntersections
 {
     public static class Just
     {

@@ -1,8 +1,8 @@
-﻿using leaf;
+﻿using SegmentIntersections;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace leaf.Tests
+namespace SegmentIntersections.Tests
 {
     [TestClass]
     public class MergeTests

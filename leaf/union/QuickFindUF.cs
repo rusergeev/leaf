@@ -1,4 +1,4 @@
-﻿namespace leaf.union
+﻿namespace SegmentIntersections.union
 {
     public class QuickFindUF: IUnionFind
     {

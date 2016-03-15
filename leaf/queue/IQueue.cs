@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace leaf.queue
+namespace SegmentIntersections.queue
 {
     public interface IQueue<T> : IEnumerable<T>
     {

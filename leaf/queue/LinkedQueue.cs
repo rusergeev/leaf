@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace leaf.queue
+namespace SegmentIntersections.queue
 {
     public class LinkedQueue<T> : IQueue<T>
     {

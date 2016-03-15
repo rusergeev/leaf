@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-namespace leaf.stack
+namespace SegmentIntersections.stack
 {
     interface IStack<T>: IEnumerable<T>
     {

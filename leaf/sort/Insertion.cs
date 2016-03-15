@@ -1,4 +1,4 @@
-﻿namespace leaf
+﻿namespace SegmentIntersections
 {
     public static class Insertion
     {
