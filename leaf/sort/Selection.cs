@@ -1,17 +1,19 @@
-namespace SegmentIntersections
+using System;
+
+namespace leaf
 {
-    public class Selection
+    public class Selection<Key> : BaseSort<Key> where Key : IComparable
     {
-        public static void sort(int[] a)
+        public static void sort(Key[] a)
         {
             int N = a.Length;
             for (int i = 0; i < N; i++)
             {
                 int min = i;
                 for (int j = i + 1; j < N; j++)
-                    if (a[j] < a[min])
+                    if (less(a, j, min))
                         min = j;
-                Just.swap(a, i, min);
+                exch(a, i, min);
             }
         }
     }

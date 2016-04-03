@@ -1,6 +1,4 @@
-﻿using System.IO.Compression;
-
-namespace SegmentIntersections.union
+﻿namespace leaf.union
 {
     public class QuickUnionUF: IUnionFind
     {

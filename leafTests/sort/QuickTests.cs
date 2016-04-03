@@ -1,6 +1,6 @@
 ﻿using System;
+using leaf;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SegmentIntersections;
 
 namespace leafTests.sort
 {
@@ -19,7 +19,7 @@ namespace leafTests.sort
                     A[i] = rnd.Next();
             }
             
-            Quick.sort(A);
+            Quick<int>.sort(A);
 
             for (int i = 0; i < A.Length-1; i++)
             {
@@ -38,7 +38,7 @@ namespace leafTests.sort
                 A[i] = i/3;
             }
 
-            Quick.sort(A);
+            Quick<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -56,7 +56,7 @@ namespace leafTests.sort
                 A[i] = (size - i) / 3;
             }
 
-            Quick.sort(A);
+            Quick<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {

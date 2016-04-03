@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SegmentIntersections
+namespace leaf
 {
     public struct Point
     {
@@ -306,7 +303,7 @@ namespace SegmentIntersections
     class IntSet
     {
         const int empty = -2;
-        private int[] a;
+        private readonly int[] a;
         private int head =-1;
         public IntSet(int capacity)
         {

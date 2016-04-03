@@ -1,4 +1,4 @@
-﻿namespace SegmentIntersections.union
+﻿namespace leaf.union
 {
     interface IUnionFind
     {

@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace leaf.sort
+namespace leaf
 {
-    public static class Heap<Key> where Key: IComparable
+    public class Heap<Key> :BaseSort<Key> where Key: IComparable
     {
         public static void sort(Key[] a)
         {
@@ -27,7 +27,5 @@ namespace leaf.sort
                 k = j;
             }
         }
-        private static bool less(Key[] a, int i, int j) { return a[i].CompareTo(a[j]) < 0; }
-        private static void exch(Key[] a, int i, int j) { Key t = a[i]; a[i] = a[j]; a[j] = t; }
     }
 }

@@ -48,11 +48,10 @@
     <Compile Include="queue\IQueue.cs" />
     <Compile Include="queue\LinkedQueue.cs" />
     <Compile Include="SegmentIntersections.cs" />
+    <Compile Include="sort\BaseSort.cs" />
     <Compile Include="sort\Heap.cs" />
     <Compile Include="sort\Insertion.cs" />
-    <Compile Include="sort\Just.cs" />
     <Compile Include="sort\Merge.cs" />
-    <Compile Include="sort\NumSort.cs" />
     <Compile Include="sort\Quick.cs" />
     <Compile Include="sort\Selection.cs" />
     <Compile Include="stack\FixedCapacityStack.cs" />

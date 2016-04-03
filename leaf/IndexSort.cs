@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace SegmentIntersections
+namespace leaf
 {
     public static class IndexSort
     {

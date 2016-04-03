@@ -1,5 +1,5 @@
 ﻿using System;
-using leaf.sort;
+using leaf;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace leafTests.sort
