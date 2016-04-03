@@ -1,14 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using leaf.queue;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace leaf.queue.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class LinkedQueueTests
     {
         private const int size = 10000;
@@ -25,7 +20,7 @@ namespace leaf.queue.Tests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void QueueTestShort()
         {
             var queue = new LinkedQueue<int>();
@@ -51,7 +46,7 @@ namespace leaf.queue.Tests
             Assert.IsTrue(queue2.isEmpty());
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void QueueTestRandom()
         {
             var queue = new LinkedQueue<int>();

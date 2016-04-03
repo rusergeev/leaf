@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace leaf.stack.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class LinkedStackTests
     {
         [TestMethod]

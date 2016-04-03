@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace leafTests.sort
 {
-    [TestClass()]
+    [TestClass]
     public class HeapSortTests
     {
         const int size = 2000;
