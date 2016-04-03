@@ -5,7 +5,7 @@ using SegmentIntersection;
 namespace SegmentIntersectionTests
 {
     [TestClass()]
-    public class SortTests
+    public class SortByIndexTests
     {
         const int size = 100000;
 

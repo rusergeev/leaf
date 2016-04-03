@@ -1,12 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SegmentIntersections;
 
-namespace SegmentIntersections.Tests
+namespace leafTests.sort
 {
     [TestClass]
-    public class SelectionTests
+    public class SelectionSortTests
     {
-        const int size = 20000;
+        const int size = 2000;
         [TestMethod]
         public void sortTest()
         {

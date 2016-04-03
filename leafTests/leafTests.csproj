@@ -51,7 +51,10 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="priority\MaxPQTests.cs" />
+    <Compile Include="priority\UnorderedMaxPQTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sort\HeapTests.cs" />
     <Compile Include="sort\InsertionTests.cs" />
     <Compile Include="sort\MergeTests.cs" />
     <Compile Include="sort\QuickTests.cs" />

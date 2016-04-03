@@ -1,13 +1,13 @@
-﻿using SegmentIntersections;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using SegmentIntersections;
 
-namespace SegmentIntersections.Tests
+namespace leafTests.sort
 {
     [TestClass]
-    public class MergeTests
+    public class MergeSortTests
     {
-        const int size = 20000;
+        const int size = 2000;
         [TestMethod]
         public void sortTest()
         {

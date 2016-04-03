@@ -1,11 +1,11 @@
 ﻿using System;
+using leaf.sort;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SegmentIntersections;
 
 namespace leafTests.sort
 {
-    [TestClass]
-    public class QuickSortTests
+    [TestClass()]
+    public class HeapSortTests
     {
         const int size = 2000;
         [TestMethod]
@@ -16,14 +16,14 @@ namespace leafTests.sort
 
             for (int i = 0; i < A.Length; i++)
             {
-                    A[i] = rnd.Next();
+                A[i] = rnd.Next();
             }
-            
-            Quick.sort(A);
 
-            for (int i = 0; i < A.Length-1; i++)
+            Heap<int>.sort(A);
+
+            for (int i = 0; i < A.Length - 1; i++)
             {
-                Assert.IsTrue(A[i]<=A[i+1]);
+                Assert.IsTrue(A[i] <= A[i + 1]);
             }
 
         }
@@ -35,10 +35,10 @@ namespace leafTests.sort
 
             for (int i = 0; i < A.Length; i++)
             {
-                A[i] = i/3;
+                A[i] = i / 3;
             }
 
-            Quick.sort(A);
+            Heap<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -56,7 +56,7 @@ namespace leafTests.sort
                 A[i] = (size - i) / 3;
             }
 
-            Quick.sort(A);
+            Heap<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {

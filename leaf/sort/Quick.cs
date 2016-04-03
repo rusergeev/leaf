@@ -33,7 +33,6 @@ namespace SegmentIntersections
             Parallel.Invoke(() => sort(a, lo, lt - 1), () => sort(a, gt + 1, hi));
         }
 
-
         public static void shuffle<T>(T[] a)
         {
             int N = a.Length;
