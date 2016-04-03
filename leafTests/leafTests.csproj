@@ -54,11 +54,15 @@
     <Compile Include="priority\MaxPQTests.cs" />
     <Compile Include="priority\UnorderedMaxPQTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="queue\LinkedQueueTests.cs" />
     <Compile Include="sort\HeapTests.cs" />
     <Compile Include="sort\InsertionTests.cs" />
     <Compile Include="sort\MergeTests.cs" />
     <Compile Include="sort\QuickTests.cs" />
     <Compile Include="sort\SelectionTests.cs" />
+    <Compile Include="stack\FixedCapacityStackTests.cs" />
+    <Compile Include="stack\LinkedStackTests.cs" />
+    <Compile Include="stack\ResizingArrayStackTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\leaf\leaf.csproj">

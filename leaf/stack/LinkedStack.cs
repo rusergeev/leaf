@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace leaf.stack
 {
-    class LinkedStack<T>:IStack<T>
+    public class LinkedStack<T>:IStack<T>
     {
         private Node first;
 
