@@ -1,44 +1,22 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using leaf.stack;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using leafTests.stack;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace leaf.stack.Tests
 {
     [TestClass()]
     public class ResizingArrayStackTests
     {
-        [TestMethod()]
-        public void ResizingArrayStackTest()
+        [TestMethod]
+        public void StackTestShort()
         {
-            Assert.Fail();
+            var tester = new IStackTests();
+            tester.StackTestShort(new ResizingArrayStack<int>(), new ResizingArrayStack<int>());
         }
-
-        [TestMethod()]
-        public void isEmptyTest()
+        [TestMethod]
+        public void StackTestRandom()
         {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void pushTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void popTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void GetEnumeratorTest()
-        {
-            Assert.Fail();
+            var tester = new IStackTests();
+            tester.StackTestRandom(new ResizingArrayStack<int>());
         }
     }
 }

@@ -1,44 +1,23 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using leaf.stack;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using leafTests.stack;
 
 namespace leaf.stack.Tests
 {
-    [TestClass()]
+    [TestClass]
     public class FixedCapacityStackTests
     {
-        [TestMethod()]
-        public void FixedCapacityStackTest()
+        [TestMethod]
+        public void StackTestShort()
         {
-            Assert.Fail();
+            var tester = new IStackTests();
+            tester.StackTestShort(new FixedCapacityStack<int>(10000), new FixedCapacityStack<int>(10000));
         }
-
-        [TestMethod()]
-        public void isEmptyTest()
+        [TestMethod]
+        public void StackTestRandom()
         {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void pushTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void popTest()
-        {
-            Assert.Fail();
-        }
-
-        [TestMethod()]
-        public void GetEnumeratorTest()
-        {
-            Assert.Fail();
+            var tester = new IStackTests();
+            tester.StackTestRandom(new FixedCapacityStack<int>(10000));
         }
     }
 }

@@ -61,6 +61,7 @@
     <Compile Include="sort\QuickTests.cs" />
     <Compile Include="sort\SelectionTests.cs" />
     <Compile Include="stack\FixedCapacityStackTests.cs" />
+    <Compile Include="stack\IStackTests.cs" />
     <Compile Include="stack\LinkedStackTests.cs" />
     <Compile Include="stack\ResizingArrayStackTests.cs" />
   </ItemGroup>

@@ -2,7 +2,7 @@
 
 namespace leaf.stack
 {
-    interface IStack<T>: IEnumerable<T>
+    public interface IStack<T>: IEnumerable<T>
     {
         bool isEmpty();
         void push(T item);
