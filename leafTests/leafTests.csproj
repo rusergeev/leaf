@@ -64,6 +64,10 @@
     <Compile Include="stack\IStackTests.cs" />
     <Compile Include="stack\LinkedStackTests.cs" />
     <Compile Include="stack\ResizingArrayStackTests.cs" />
+    <Compile Include="union\FindTests.cs" />
+    <Compile Include="union\IFindTest.cs" />
+    <Compile Include="union\QuickFindUFTests.cs" />
+    <Compile Include="union\QuickUnionUFTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\leaf\leaf.csproj">
