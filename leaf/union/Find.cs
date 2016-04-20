@@ -1,4 +1,4 @@
-﻿namespace SegmentIntersections.union
+﻿namespace leaf.union
 {
     public class Find : IUnionFind
     {

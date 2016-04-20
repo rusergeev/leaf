@@ -40,12 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IndexSort.cs" />
     <Compile Include="IntSet.cs" />
     <Compile Include="Point.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Segment.cs" />
     <Compile Include="SegmentIntersections.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\leaf\leaf.csproj">
+      <Project>{F8960507-68FD-4359-8800-485590972DA0}</Project>
+      <Name>leaf</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

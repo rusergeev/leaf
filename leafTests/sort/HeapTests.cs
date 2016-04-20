@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace leafTests.sort
 {
     [TestClass]
-    public class SelectionSortTests
+    public class HeapSortTests
     {
         const int size = 2000;
         [TestMethod]
@@ -19,7 +19,7 @@ namespace leafTests.sort
                 A[i] = rnd.Next();
             }
 
-            Selection<int>.sort(A);
+            Heap<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -38,7 +38,7 @@ namespace leafTests.sort
                 A[i] = i / 3;
             }
 
-            Selection<int>.sort(A);
+            Heap<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -56,7 +56,7 @@ namespace leafTests.sort
                 A[i] = (size - i) / 3;
             }
 
-            Selection<int>.sort(A);
+            Heap<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {

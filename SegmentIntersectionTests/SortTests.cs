@@ -1,15 +1,16 @@
 ﻿using System;
+using leaf;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SegmentIntersection;
 
 namespace SegmentIntersectionTests
 {
-    [TestClass()]
-    public class SortTests
+    [TestClass]
+    public class SortByIndexTests
     {
-        const int size = 100000;
+        const int size = 2000;
 
-        [TestMethod()]
+        [TestMethod]
         public void SortByIndexTest()
         {
             var rnd = new Random();
@@ -20,7 +21,7 @@ namespace SegmentIntersectionTests
                 A[i] = rnd.NextDouble();
             }
 
-            var index = A.SortIndex();
+            var index = IndexSort<double>.SortIndex(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {

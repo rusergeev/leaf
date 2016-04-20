@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace SegmentIntersections.stack
+namespace leaf.stack
 {
-    class LinkedStack<T>:IStack<T>
+    public class LinkedStack<T>:IStack<T>
     {
         private Node first;
 

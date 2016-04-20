@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using leaf;
 
 namespace SegmentIntersection
 {
@@ -27,8 +28,8 @@ namespace SegmentIntersection
         }
         public static IEnumerable<Point> tip_propagation2X(IReadOnlyList<Point> tipPath, IReadOnlyList<Segment> NF)
         {
-            var L = NF.Select(f => Math.Min(f.start.x, f.end.x)).ToList().SortIndex();
-            var R = NF.Select(f => Math.Max(f.start.x, f.end.x)).ToList().SortIndex();
+            var L = IndexSort<double>.SortIndex(NF.Select(f => Math.Min(f.start.x, f.end.x)).ToArray());
+            var R = IndexSort<double>.SortIndex(NF.Select(f => Math.Max(f.start.x, f.end.x)).ToArray());
 
             var N = NF.Count;
 
@@ -86,10 +87,10 @@ namespace SegmentIntersection
 
         public static IEnumerable<Point> tip_propagation2XY(IReadOnlyList<Point> tipPath, IReadOnlyList<Segment> NF)
         {
-            var L = NF.Select(f => Math.Min(f.start.x, f.end.x)).ToList().SortIndex();
-            var R = NF.Select(f => Math.Max(f.start.x, f.end.x)).ToList().SortIndex();
-            var B = NF.Select(f => Math.Min(f.start.y, f.end.y)).ToList().SortIndex();
-            var T = NF.Select(f => Math.Max(f.start.y, f.end.y)).ToList().SortIndex();
+            var L = IndexSort<double>.SortIndex(NF.Select(f => Math.Min(f.start.x, f.end.x)).ToArray());
+            var R = IndexSort<double>.SortIndex(NF.Select(f => Math.Max(f.start.x, f.end.x)).ToArray());
+            var B = IndexSort<double>.SortIndex(NF.Select(f => Math.Min(f.start.y, f.end.y)).ToArray());
+            var T = IndexSort<double>.SortIndex(NF.Select(f => Math.Max(f.start.y, f.end.y)).ToArray());
 
             var N = NF.Count;
 
@@ -171,8 +172,8 @@ namespace SegmentIntersection
         }
         public static IEnumerable<Point> tip_propagation2Y(IReadOnlyList<Point> tipPath, IReadOnlyList<Segment> NF)
         {
-            var B = NF.Select(f => Math.Min(f.start.y, f.end.y)).ToList().SortIndex();
-            var T = NF.Select(f => Math.Max(f.start.y, f.end.y)).ToList().SortIndex();
+            var B = IndexSort<double>.SortIndex(NF.Select(f => Math.Min(f.start.y, f.end.y)).ToArray());
+            var T = IndexSort<double>.SortIndex(NF.Select(f => Math.Max(f.start.y, f.end.y)).ToArray());
 
             var N = NF.Count;
 

@@ -1,13 +1,13 @@
-﻿using SegmentIntersections;
+﻿using System;
+using leaf;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace SegmentIntersections.Tests
+namespace leafTests.sort
 {
     [TestClass]
-    public class MergeTests
+    public class MergeSortTests
     {
-        const int size = 20000;
+        const int size = 2000;
         [TestMethod]
         public void sortTest()
         {
@@ -19,7 +19,7 @@ namespace SegmentIntersections.Tests
                 A[i] = rnd.Next();
             }
 
-            Merge.sort(A);
+            Merge<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -38,7 +38,7 @@ namespace SegmentIntersections.Tests
                 A[i] = i / 3;
             }
 
-            Merge.sort(A);
+            Merge<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -56,7 +56,7 @@ namespace SegmentIntersections.Tests
                 A[i] = (size - i) / 3;
             }
 
-            Merge.sort(A);
+            Merge<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -76,7 +76,7 @@ namespace SegmentIntersections.Tests
                 A[i] = rnd.Next();
             }
 
-            Merge.sortbottomup(A);
+            Merge<int>.sortbottomup(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -95,7 +95,7 @@ namespace SegmentIntersections.Tests
                 A[i] = i / 3;
             }
 
-            Merge.sortbottomup(A);
+            Merge<int>.sortbottomup(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -113,7 +113,7 @@ namespace SegmentIntersections.Tests
                 A[i] = (size - i) / 3;
             }
 
-            Merge.sortbottomup(A);
+            Merge<int>.sortbottomup(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {

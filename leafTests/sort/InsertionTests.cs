@@ -1,12 +1,13 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
+using leaf;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace SegmentIntersections.Tests
+namespace leafTests.sort
 {
     [TestClass]
-    public class InsertionTests
+    public class InsertionSortTests
     {
-        const int size = 20000;
+        const int size = 2000;
         [TestMethod]
         public void sortTest()
         {
@@ -18,7 +19,7 @@ namespace SegmentIntersections.Tests
                 A[i] = rnd.Next();
             }
 
-            Insertion.sort(A);
+            Insertion<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -37,7 +38,7 @@ namespace SegmentIntersections.Tests
                 A[i] = i / 3;
             }
 
-            Insertion.sort(A);
+            Insertion<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {
@@ -55,7 +56,7 @@ namespace SegmentIntersections.Tests
                 A[i] = (size - i) / 3;
             }
 
-            Insertion.sort(A);
+            Insertion<int>.sort(A);
 
             for (int i = 0; i < A.Length - 1; i++)
             {

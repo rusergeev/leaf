@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 
-namespace SegmentIntersection
+namespace leaf
 {
-    public static class IndexSort
+    public class IndexSort<Key> : BaseSort<Key> where Key : IComparable
     {
-        public static IList<int> SortIndex(this IReadOnlyList<double> a)
+        public static IList<int> SortIndex( Key[] a)
         {
-            int N = a.Count;
+            int N = a.Length;
             int[] index = new int[N];
             for (int i = 0; i < N; i++) index[i] = i;
             int[] aux = new int[N];
@@ -16,7 +16,7 @@ namespace SegmentIntersection
                     merge(a, index, aux, lo, lo + sz - 1, Math.Min(lo + sz + sz - 1, N - 1));
             return index;
         }
-        private static void merge(IReadOnlyList<double> a, IList<int> index, IList<int> aux, int lo, int mid, int hi)
+        private static void merge(Key[] a, IList<int> index, IList<int> aux, int lo, int mid, int hi)
         {
             for (int k = lo; k <= hi; k++)
                 aux[k] = index[k];
@@ -25,7 +25,7 @@ namespace SegmentIntersection
             {
                 if (i > mid) index[k] = aux[j++];
                 else if (j > hi) index[k] = aux[i++];
-                else if (a[aux[j]] < a[aux[i]]) index[k] = aux[j++];
+                else if (less(a, aux[j], aux[i])) index[k] = aux[j++];
                 else index[k] = aux[i++];
             }
 

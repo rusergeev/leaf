@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SegmentIntersection;
+using SegmentIntersections = SegmentIntersection.SegmentIntersections;
 
 namespace SegmentIntersectionTests
 {
-    [TestClass()]
+    [TestClass]
     public class SegmentIntersectionsTests
     {
         private static Segment[] NF;
@@ -46,7 +47,7 @@ namespace SegmentIntersectionTests
 
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void tip_propagationTest()
         {
 
@@ -65,7 +66,7 @@ namespace SegmentIntersectionTests
         }
 
 
-        [TestMethod()]
+        [TestMethod]
         public void tip_propagation2XTest()
         {
             var list = SegmentIntersections.tip_propagation2X(tipPath, NF).ToList();
@@ -82,7 +83,7 @@ namespace SegmentIntersectionTests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void tip_propagation2XYTest()
         {
             var list = SegmentIntersections.tip_propagation2XY(tipPath, NF).ToList();
@@ -99,7 +100,7 @@ namespace SegmentIntersectionTests
             }
         }
 
-        [TestMethod()]
+        [TestMethod]
         public void tip_propagation2YTest()
         {
             var list = SegmentIntersections.tip_propagation2Y(tipPath, NF).ToList();

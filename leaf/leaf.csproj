@@ -40,15 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IndexSort.cs" />
+    <Compile Include="sort\IndexSort.cs" />
+    <Compile Include="priority\MaxPQ.cs" />
+    <Compile Include="priority\UnorderedMaxPQ.cs" />
+    <Compile Include="priority\IPriorityQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="queue\IQueue.cs" />
     <Compile Include="queue\LinkedQueue.cs" />
-    <Compile Include="SegmentIntersections.cs" />
+    <Compile Include="sort\BaseSort.cs" />
+    <Compile Include="sort\Heap.cs" />
     <Compile Include="sort\Insertion.cs" />
-    <Compile Include="sort\Just.cs" />
     <Compile Include="sort\Merge.cs" />
-    <Compile Include="sort\NumSort.cs" />
     <Compile Include="sort\Quick.cs" />
     <Compile Include="sort\Selection.cs" />
     <Compile Include="stack\FixedCapacityStack.cs" />
