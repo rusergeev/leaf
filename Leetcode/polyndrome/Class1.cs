@@ -8,6 +8,6 @@ namespace Leetcode.polyndrome
 {
     public class Poly
     {
-        int[]
+
     }
 }
