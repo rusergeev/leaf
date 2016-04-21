@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentIntersectionTests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leetcode", "Leetcode\Leetcode.csproj", "{64FECD0F-8B59-4DCC-BD98-4E1C559D4073}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetcodeTests", "LeetcodeTests\LeetcodeTests.csproj", "{F38A9613-800B-4367-8F7F-0BC779890082}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{64FECD0F-8B59-4DCC-BD98-4E1C559D4073}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64FECD0F-8B59-4DCC-BD98-4E1C559D4073}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64FECD0F-8B59-4DCC-BD98-4E1C559D4073}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F38A9613-800B-4367-8F7F-0BC779890082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F38A9613-800B-4367-8F7F-0BC779890082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F38A9613-800B-4367-8F7F-0BC779890082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F38A9613-800B-4367-8F7F-0BC779890082}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

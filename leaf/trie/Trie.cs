@@ -3,7 +3,7 @@
     public class Trie
     {
         private readonly Trie[] Next = new Trie[26];
-        private string Word = null;
+        private string Word;
 
         public Trie GetNext(char c)
         {
