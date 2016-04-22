@@ -8,45 +8,44 @@ namespace Leetcode.Word_Search_II
     public class DFS
     {
         private readonly bool[] visited;
-        private readonly MatrixAsGraph<char> graph;
-        private readonly Trie trie;
+        private readonly MatrixAsGraph<char> Graph;
+        private readonly Trie Trie;
         public DFS(MatrixAsGraph<char> graph, Trie trie)
         {
             visited = new bool[graph.Count];
-            this.graph = graph;
-            this.trie = trie;
+            this.Graph = graph;
+            this.Trie = trie;
         }
 
         public IEnumerable<string> TraverseFrom(int v)
         {
             Debug.WriteLine(" ");
+            Debug.WriteLine($"{v % 6}-{v / 6}:");
             for (int i = 0; i< visited.Length; i++)
             {
                 visited[i] = false;
             }
-            return Visit(v, trie);
+            var c = Graph.Value(v);
+            return Trie.Contains(c)? Visit(v, Trie.GetNext(c)) : Enumerable.Empty<string>();
         }
 
-        private IEnumerable<string> Visit(int v, Trie node)
+        private IEnumerable<string> Visit(int v, Trie trie)
         {
-            Debug.Write($"{v % 3}-{v / 3}({graph.Value(v)}) ");
+            Debug.Write($"{Graph.Value(v)} ");
             visited[v] = true;
-            if (node.IsWord())
+            if (trie.IsWord())
             {
-                Debug.Write($"[{node.GetWord()}] ");
-                yield return node.GetWord();
+                Debug.Write($"[{trie.GetWord()}] ");
+                yield return trie.GetWord();
             }
 
-            var next = node.GetNext(graph.Value(v));
-            if (next == null) yield break;
-
-            foreach (var w in graph.Next(v))
+            foreach (var w in Graph.Next(v))
             {
-
-                if (!visited[w])
+                var c = Graph.Value(w);
+                if (!visited[w] && trie.Contains(c))
                 {
                     Debug.Write("{ ");
-                    foreach (var word in Visit(w, next))
+                    foreach (var word in Visit(w, trie.GetNext(c)))
                         yield return word;
                     Debug.Write("} ");
                 }

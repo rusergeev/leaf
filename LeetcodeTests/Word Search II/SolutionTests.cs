@@ -41,5 +41,37 @@ namespace Leetcode.Word_Search_II.Tests
             Assert.AreEqual(res.Count, 1);
             Assert.AreEqual(res.First(), "cdba");
         }
+        [TestMethod]
+        public void FindWordsTest4()
+        {
+            char[,] matrix =
+            {
+                {'b','a','a','b','a','b'},
+                {'a','b','a','a','a','a'},
+                {'a','b','a','a','a','b'},
+                {'a','b','a','b','b','a'},
+                {'a','a','b','b','a','b'},
+                {'a','a','b','b','b','a'},
+                {'a','a','b','a','a','b'}
+            };
+            string[] words =
+            {
+                "bbaabaabaaaaabaababaaaaababb", "aabbaaabaaabaabaaaaaabbaaaba",
+                "babaababbbbbbbaabaababaabaaa", "bbbaaabaabbaaababababbbbbaaa", "babbabbbbaabbabaaaaaabbbaaab",
+                "bbbababbbbbbbababbabbbbbabaa", "babababbababaabbbbabbbbabbba", "abbbbbbaabaaabaaababaabbabba",
+                "aabaabababbbbbbababbbababbaa", "aabbbbabbaababaaaabababbaaba", "ababaababaaabbabbaabbaabbaba",
+                "abaabbbaaaaababbbaaaaabbbaab", "aabbabaabaabbabababaaabbbaab", "baaabaaaabbabaaabaabababaaaa",
+                "aaabbabaaaababbabbaabbaabbaa", "aaabaaaaabaabbabaabbbbaabaaa", "abbaabbaaaabbaababababbaabbb",
+                "baabaababbbbaaaabaaabbababbb", "aabaababbaababbaaabaabababab", "abbaaabbaabaabaabbbbaabbbbbb",
+                "aaababaabbaaabbbaaabbabbabab", "bbababbbabbbbabbbbabbbbbabaa", "abbbaabbbaaababbbababbababba",
+                "bbbbbbbabbbababbabaabababaab", "aaaababaabbbbabaaaaabaaaaabb", "bbaaabbbbabbaaabbaabbabbaaba",
+                "aabaabbbbaabaabbabaabababaaa", "abbababbbaababaabbababababbb", "aabbbabbaaaababbbbabbababbbb",
+                "babbbaabababbbbbbbbbaabbabaa"
+            };
+
+        var sol = new Solution();
+            var res = sol.FindWords(matrix, words);
+            Assert.AreEqual(res.Count, 3);
+        }
     }
 }

@@ -12,9 +12,15 @@
 
         public Trie SetNext(char c)
         {
-            if (GetNext(c) == null) Next[c-'a'] = new Trie();
+            if (!Contains(c)) Next[c-'a'] = new Trie();
             return GetNext(c);
         }
+
+        public bool Contains(char c)
+        {
+            return GetNext(c) != null;
+        }
+
         public void Add(string word)
         {
             var node = this;
