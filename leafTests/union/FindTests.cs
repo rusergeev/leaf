@@ -9,7 +9,7 @@ namespace leaf.union.Tests
         [TestMethod]
         public void FindTest()
         {
-            IFindTest.FindTest( new Find(10));
+            IFindTest.FindTest( new WeightedUnionFind(10));
         }
     }
 }

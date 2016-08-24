@@ -2,7 +2,7 @@
 {
     public interface IUnionFind
     {
-        bool connected(int p, int q);
-        void union(int p, int q);
+        bool Connected(int p, int q);
+        void Union(int p, int q);
     }
 }

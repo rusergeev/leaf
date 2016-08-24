@@ -10,10 +10,10 @@
                 id[i] = i;
         }
 
-        public bool connected(int p, int q)
+        public bool Connected(int p, int q)
         { return id[p] == id[q]; }
 
-        public void union(int p, int q)
+        public void Union(int p, int q)
         {
             int pid = id[p];
             int qid = id[q];

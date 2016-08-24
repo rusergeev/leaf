@@ -58,7 +58,7 @@
     <Compile Include="stack\LinkedStack.cs" />
     <Compile Include="stack\ResizingArrayStack.cs" />
     <Compile Include="trie\Trie.cs" />
-    <Compile Include="union\Find.cs" />
+    <Compile Include="union\WeightedUnionFind.cs" />
     <Compile Include="union\IUnionFind.cs" />
     <Compile Include="union\QuickFindUF.cs" />
     <Compile Include="union\QuickUnionUF.cs" />
