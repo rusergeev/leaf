@@ -40,6 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="graph\DepthFirstSearch.cs" />
+    <Compile Include="graph\DiGraph.cs" />
+    <Compile Include="graph\ICountable.cs" />
+    <Compile Include="graph\IGraph.cs" />
     <Compile Include="sort\IndexSort.cs" />
     <Compile Include="priority\MaxPQ.cs" />
     <Compile Include="priority\UnorderedMaxPQ.cs" />
@@ -63,9 +67,7 @@
     <Compile Include="union\QuickFindUF.cs" />
     <Compile Include="union\QuickUnionUF.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="graph\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
