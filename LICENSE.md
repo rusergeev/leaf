@@ -1,4 +1,4 @@
-Copyright (c) 2016, Dmitry Sergeev ru.sergeev@gamil.com
+Copyright (c) 2016, Dmitry Sergeev, ru.sergeev@gmail.com
 
 All rights reserved.
 
