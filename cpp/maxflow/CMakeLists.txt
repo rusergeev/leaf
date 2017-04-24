@@ -3,5 +3,5 @@ project(maxflow)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp FlowEdge.cpp FlowEdge.h FlowNetwork.cpp FlowNetwork.h FordFulkerson.h AugmentingPath.h)
-add_executable(available ${SOURCE_FILES})
+set(SOURCE_FILES main.cpp FlowEdge.h FlowNetwork.h FordFulkerson.h AugmentingPath.h)
+add_executable(maxflow ${SOURCE_FILES})
